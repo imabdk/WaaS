@@ -10,4 +10,4 @@ if (-NOT(Test-Path -Path $currentActionPath)) { New-Item -Path $logsPath -Name $
 Copy-Item -Path "$smstsLogPath\*" -Destination $currentActionPath -Recurse
 Copy-Item -Path 'C:\$WINDOWS.~BT\Sources\Panther\CompatData*.xml' -Destination $currentActionPath -Recurse
 Copy-Item -Path 'C:\$WINDOWS.~BT\Sources\Panther\*.log' -Destination $currentActionPath -Recurse
-Copy-Item -Path 'C:\Windows\CCM\Logs\SetupDiagResults.log' -Destination $currentActionPath -Recurse
+Copy-Item -Path 'C:\Windows\Logs\SetupDiag\setupdiagresults.xml' -Destination $currentActionPath -Recurse
